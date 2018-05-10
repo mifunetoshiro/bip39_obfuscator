@@ -80,19 +80,13 @@ else:
         else:
             if not flag:
                 for cp in parts:
-                    try:
-                        if chr(int(cp, 16)) not in bip39_cn.values():
-                            flag = True
-                            input_codepoints.clear()
-                            print("'" + cp + "' is not a valid Traditional Chinese BIP-39 seed word Unicode codepoint.")
-                            continue
-                        else:
-                            input_codepoints.append(cp.upper())
-                    except ValueError:
+                    if chr(int(cp, 16)) not in bip39_cn.values():
                         flag = True
                         input_codepoints.clear()
                         print("'" + cp + "' is not a valid Traditional Chinese BIP-39 seed word Unicode codepoint.")
                         continue
+                    else:
+                        input_codepoints.append(cp.upper())
             if flag:
                 continue
             for n in input_codepoints:
