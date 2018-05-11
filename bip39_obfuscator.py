@@ -140,8 +140,8 @@ if x == 1:
                         print(line)
                         if a == 0:
                             print("-" * len(line))
-                    print("\nEach sheet has two thirds of your encrypted seed words."
-                          "\nYou need any two sheets to recover your full encrypted mnemonic phrase."
+                    print("\nEach sheet has two thirds of your obfuscated seed words."
+                          "\nYou need any two sheets to recover your full mnemonic phrase."
                           "\nStore each at a different safe place or hand out to your family members or attorney."
                           "\nA single sheet cannot give access to your wallet, if you lose the other two, your funds are lost forever!")
             break
