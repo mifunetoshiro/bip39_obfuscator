@@ -38,7 +38,7 @@ print("Do NOT run this script on a computer connected to the internet and"
 q = input("Type \"yes\" if you understand the risks, made precautions and want to proceed: ")
 if q.lower() == "yes":
     while True:
-        print("Enter '1' to map your seed words into Traditional Chinese Unicode codepoints.")
+        print("\nEnter '1' to map your seed words into Traditional Chinese Unicode codepoints.")
         print("Enter '2' to unmap your Unicode codepoints into English seed words.")
         try:
             x = int(input("Input: "))
