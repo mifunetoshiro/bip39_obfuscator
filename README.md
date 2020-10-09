@@ -49,3 +49,8 @@ Optionally, you can split the obfuscated seed words into 2-out-of-3 recovery she
 | #11: 932F | #12: 4E95 | #12: 4E95 |
 
 Write down and store each sheet separately at a different location.
+
+## Donation
+If you'd like to thank me with a small donation, you can send a few cents this way:
+ETH: 0x2a7fA9627ad2fF7c2f1Ea31e9448C197d76A734A
+BTC: 3E5dKZ8GyzXTCRPafuQTwPbNRER4HkM58H
