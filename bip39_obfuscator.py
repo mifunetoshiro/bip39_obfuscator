@@ -1,4 +1,5 @@
 import sys
+import socket
 
 if sys.version_info[0] < 3:
     raise Exception("Python 3.x is required!")
@@ -32,6 +33,9 @@ with open("chinese_traditional.txt", encoding="utf-8") as wordlist:
     if len(bip39_cn) != 2048:
         raise ValueError("chinese_traditional.txt has " + str(len(bip39_cn)) + " lines, expected 2048!")
 
+ip = socket.gethostbyname(socket.gethostname())
+if ip != "127.0.0.1":
+    print("WARNING! You are connected to the internet!")
 print("Do NOT run this script on a computer connected to the internet and"
       "\ndo NOT reconnect this computer to the internet without wiping/reformatting it first!"
       "\nA keylogger can steal your seed words!")
