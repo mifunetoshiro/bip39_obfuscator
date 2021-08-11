@@ -58,9 +58,9 @@ if q.lower() == "yes":
     if x == 1:
         while True:
             flag = False
-            words = input("\nEnter your 12, 18 or 24 seed words in \"cat dad jar...\" format: ").lower().split()
-            if len(words) not in [12, 18, 24]:
-                print(str(len(words)) + " words entered, please enter 12, 18 or 24 words.")
+            words = input("\nEnter your 12, 15, 18 or 24 seed words in \"cat dad jar...\" format: ").lower().split()
+            if len(words) not in [12, 15, 18, 24]:
+                print(str(len(words)) + " words entered, please enter 12, 15, 18 or 24 words.")
                 continue
             else:
                 if not flag:
@@ -81,10 +81,10 @@ if q.lower() == "yes":
     else:
         while True:
             flag = False
-            codepoints = input("\nEnter your 12, 18 or 24 Traditional Chinese codepoints in any format: ").replace(" ", "")
+            codepoints = input("\nEnter your 12, 15, 18 or 24 Traditional Chinese codepoints in any format: ").replace(" ", "")
             parts = [codepoints[i:i + 4] for i in range(0, len(codepoints), 4)]
-            if len(parts) not in [12, 18, 24]:
-                print(str(len(parts)) + " codepoints entered, please enter 12, 18 or 24 codepoints.")
+            if len(parts) not in [12, 15, 18, 24]:
+                print(str(len(parts)) + " codepoints entered, please enter 12, 15, 18 or 24 codepoints.")
                 continue
             else:
                 if not flag:
